@@ -6,9 +6,12 @@ const Profile = () => {
 const handleName = fullname => {
     alert(`Hi, I am  ${fullname}`)
 }
+const styleObject = {
+    color: 'blue', textAlign: 'center'
+}
 
     return(
-        <div className="profile">
+        <div style={styleObject}>
             <ProfileChild 
                 image=  {photo}
                 fullname = 'Alioune Badara Nzale'
