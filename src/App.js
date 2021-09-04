@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+import Profile from './Profile/Profile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Profile/>
+    </React.Fragment>
   );
 }
 
 export default App;
+
+
+
+/*
+Create a project using create-react-app.
+Create a profile folder under src.
+Create a profile component under /profile.
+The profile component gets data (fullName, bio, profession) as props, 
+and gets image as children props, and the function handleName functions as 
+a prop that sends an alert message with the name of the profile user.
+Define the default props for Profile component. 
+Use PropsType to check props.  
+Use inline style.
+*/
