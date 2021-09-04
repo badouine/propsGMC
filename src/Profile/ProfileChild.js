@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from 'prop-types';
+
 
 const ProfileChild = props => {
 
@@ -15,6 +17,14 @@ const ProfileChild = props => {
 
 ProfileChild.defaultProps = {
     fullname: "Alioune Sahaba Yonen"
+}
+
+ProfileChild.propTypes = {
+    fullname: PropTypes.string,
+    bio: PropTypes.string,
+    profession: PropTypes.string,
+    handleName: PropTypes.func,
+    image: PropTypes.oneOf(['image'])
 }
 
 export default ProfileChild;
